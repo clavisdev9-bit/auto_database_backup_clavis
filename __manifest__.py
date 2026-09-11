@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 ###############################################################################
 #
-#    Cybrosys Technologies Pvt. Ltd.
+#    Clavis Dev Pvt. Ltd.
 #
-#    Copyright (C) 2024-TODAY Cybrosys Technologies(<https://www.cybrosys.com>)
-#    Author: Cybrosys Techno Solutions (odoo@cybrosys.com)
+#    Copyright (C) 2024-TODAY Clavis Dev(<https://www.clavis.co.id>)
+#    Author: Clavis Development (project@clavis.co.id)
 #
 #    You can modify it under the terms of the GNU LESSER
 #    GENERAL PUBLIC LICENSE (LGPL v3), Version 3.
@@ -29,10 +29,10 @@
                'google drive, dropbox, nextcloud, amazon S3, onedrive or '
                'remote server, Odoo18, Backup, Database, Odoo Apps',
     'description': 'Odoo Database Backup, Database Backup, Automatic Backup, automatic database backup, odoo18, odoo apps,backup, automatic backup,odoo17 automatic database backup,backup google drive,backup dropbox, backup nextcloud, backup amazon S3, backup onedrive',
-    'author': "Cybrosys Techno Solutions",
-    'company': 'Cybrosys Techno Solutions',
-    'maintainer': 'Cybrosys Techno Solutions',
-    'website': "https://www.cybrosys.com",
+    'author': "Clavis Development",
+    'company': 'Clavis Development',
+    'maintainer': 'Clavis Development',
+    'website': "https://www.clavis.co.id",
     'depends': ['base', 'mail'],
     'data': [
         'security/ir.model.access.csv',

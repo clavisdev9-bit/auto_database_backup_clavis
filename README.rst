@@ -18,7 +18,7 @@ General Public License, Version 3 (LGPL v3).
 
 Company
 -------
-* `Cybrosys Techno Solutions <https://cybrosys.com/>`__
+* `Clavis Development <https://clavis.co.id/>`__
 
 Credits
 -------
@@ -27,11 +27,11 @@ Credits
                (v16 Amazon S3,NextCloud) Anfas Faisal K,
                (v17) Aslam A K,
                (v18) Aslam A K
-  Contact : odoo@cybrosys.com
+  Contact : project@clavis.co.id
 
 Contacts
 --------
-* Mail Contact : odoo@cybrosys.com
+* Mail Contact : project@clavis.co.id
 
 Bug Tracker
 -----------
@@ -39,12 +39,9 @@ Bugs are tracked on GitHub Issues. In case of trouble, please check there if you
 
 Maintainer
 ==========
-.. image:: https://cybrosys.com/images/logo.png
-   :target: https://cybrosys.com
+This module is maintained by Clavis Dev.
 
-This module is maintained by Cybrosys Technologies.
-
-For support and more information, please visit `Our Website <https://cybrosys.com/>`__
+For support and more information, please visit `Our Website <https://clavis.co.id/>`__
 
 Further information
 ===================
