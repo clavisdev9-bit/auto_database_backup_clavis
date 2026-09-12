@@ -341,7 +341,7 @@ class DbBackupConfigure(models.Model):
         AUTHORITY = 'https://login.microsoftonline.com/common/oauth2/v2.0/authorize'
         base_url = self.get_base_url()
         action_id = self.env["ir.actions.act_window"].sudo()._for_xml_id(
-            "auto_database_backup.db_backup_configure_action")['id']
+            "auto_database_backup_clavis.db_backup_configure_action")['id']
         url_return = f"{base_url}/web#id={self.id}&action={action_id}&view_type=form&model=db.backup.configure"
         state = {
             'backup_config_id': self.id,
@@ -366,7 +366,7 @@ class DbBackupConfigure(models.Model):
         GOOGLE_AUTH_ENDPOINT = "https://accounts.google.com/o/oauth2/auth"
         base_url = self.get_base_url()
         action_id = self.env["ir.actions.act_window"].sudo()._for_xml_id(
-            "auto_database_backup.db_backup_configure_action")['id']
+            "auto_database_backup_clavis.db_backup_configure_action")['id']
         url_return = f"{base_url}/web#id={self.id}&action={action_id}&view_type=form&model=db.backup.configure"
         state = {
             'backup_config_id': self.id,
@@ -584,9 +584,9 @@ class DbBackupConfigure(models.Model):
            model will be created."""
         records = self.search([('backup_frequency', '=', frequency)])
         mail_template_success = self.env.ref(
-            'auto_database_backup.mail_template_data_db_backup_successful')
+            'auto_database_backup_clavis.mail_template_data_db_backup_successful')
         mail_template_failed = self.env.ref(
-            'auto_database_backup.mail_template_data_db_backup_failed')
+            'auto_database_backup_clavis.mail_template_data_db_backup_failed')
         for rec in records:
             backup_time = fields.datetime.utcnow().strftime("%Y-%m-%d_%H-%M-%S")
             backup_filename = f"{rec.db_name}_{backup_time}.{rec.backup_format}"
@@ -1030,7 +1030,7 @@ class DbBackupConfigure(models.Model):
     def dump_data(self, db_name, stream, backup_format, backup_frequency):
         """Dump database `db` into file-like object `stream` if stream is None
         return a file object with the dump. """
-        cron_user_id = self.env.ref(f'auto_database_backup.ir_cron_auto_db_backup_{backup_frequency}').user_id.id
+        cron_user_id = self.env.ref(f'auto_database_backup_clavis.ir_cron_auto_db_backup_{backup_frequency}').user_id.id
         if cron_user_id != self.env.user.id:
             _logger.error(
                 'Unauthorized database operation. Backups should only be available from the cron job.')
